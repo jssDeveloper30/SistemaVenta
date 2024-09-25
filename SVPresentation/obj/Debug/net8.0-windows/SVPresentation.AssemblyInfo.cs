@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SVPresentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36c44fb42d37e4cd212a56f0f87d99fe591c0e6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817b8a88aa238469163729465b3dd6b32383c606")]
 [assembly: System.Reflection.AssemblyProductAttribute("SVPresentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SVPresentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

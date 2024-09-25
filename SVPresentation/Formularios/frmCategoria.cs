@@ -1,4 +1,6 @@
-﻿using SVPresentation.ViewModels;
+﻿using SVPresentation.Utilidades;
+using SVPresentation.Utilidades.Objetos;
+using SVPresentation.ViewModels;
 using SVServices.Interface;
 
 namespace SVPresentation.Formularios
@@ -14,10 +16,6 @@ namespace SVPresentation.Formularios
             _medidaService = medidaService;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
         private async Task ViewCategory(string search = "")
         {
             var listaCategorias = await _categoriaService.GetCategory(search);
@@ -40,7 +38,29 @@ namespace SVPresentation.Formularios
         }
         private async void frmCategoria_Load(object sender, EventArgs e)
         {
+            dgvCategorias.ImplementarConfiguracion("Editar");
             await ViewCategory("");
+            dgvCategorias.AutoSizeColumnsMode = (DataGridViewAutoSizeColumnsMode)DataGridViewAutoSizeColumnMode.Fill;
+
+            OpcionCombo[] itemsHabilitado = new OpcionCombo[]
+            {
+                new OpcionCombo{Texto="Si", Valor = 1},
+                new OpcionCombo{Texto="No", Valor = 0}
+            };
+
+            var listaMedida = await _medidaService.GetListSize();
+            var items = listaMedida.Select(item => new OpcionCombo { Texto = item.Nombre, Valor = item.IdMedida }).ToArray();
+
+            cmbMedidaNuevo.InsertarItems(items);
+            cmbMedidaEditar.InsertarItems(items);
+
+            cmbHabilitado.InsertarItems(itemsHabilitado);
+
+        }
+
+        private async void btnBuscar_Click(object sender, EventArgs e)
+        {
+            await ViewCategory(txtBuscar.Text);
         }
     }
 }

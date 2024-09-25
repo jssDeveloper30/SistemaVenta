@@ -110,6 +110,7 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btn
             // 
@@ -120,7 +121,6 @@
             btn.TabIndex = 0;
             btn.Text = "Nuevo";
             btn.UseVisualStyleBackColor = true;
-            btn.Click += button1_Click;
             // 
             // tabNuevo
             // 

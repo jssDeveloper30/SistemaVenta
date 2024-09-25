@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{68F60826-C444-42FC-8E64-A740E995C9FB}|SVPresentation\\SVPresentation.csproj|solutionrelative:svpresentation\\formularios\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68F60826-C444-42FC-8E64-A740E995C9FB}|SVPresentation\\SVPresentation.csproj|c:\\users\\sebas\\source\\repos\\sistemaventa\\svpresentation\\viewmodels\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68F60826-C444-42FC-8E64-A740E995C9FB}|SVPresentation\\SVPresentation.csproj|solutionrelative:svpresentation\\viewmodels\\categoriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68F60826-C444-42FC-8E64-A740E995C9FB}|SVPresentation\\SVPresentation.csproj|c:\\users\\sebas\\source\\repos\\sistemaventa\\svpresentation\\formularios\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68F60826-C444-42FC-8E64-A740E995C9FB}|SVPresentation\\SVPresentation.csproj|solutionrelative:svpresentation\\formularios\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 241,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +30,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\Formularios\\frmCategoria.cs",
+              "RelativeDocumentMoniker": "SVPresentation\\Formularios\\frmCategoria.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\Formularios\\frmCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SVPresentation\\Formularios\\frmCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T21:13:17.782Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmCategoria.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\Formularios\\frmCategoria.cs",
               "RelativeDocumentMoniker": "SVPresentation\\Formularios\\frmCategoria.cs",
               "ToolTip": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\Formularios\\frmCategoria.cs",
               "RelativeToolTip": "SVPresentation\\Formularios\\frmCategoria.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAIAwwEQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T20:16:09.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriaViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\ViewModels\\CategoriaViewModel.cs",
-              "RelativeDocumentMoniker": "SVPresentation\\ViewModels\\CategoriaViewModel.cs",
-              "ToolTip": "C:\\Users\\sebas\\source\\repos\\SistemaVenta\\SVPresentation\\ViewModels\\CategoriaViewModel.cs",
-              "RelativeToolTip": "SVPresentation\\ViewModels\\CategoriaViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:13:11.05Z",
               "EditorCaption": ""
             }
           ]
