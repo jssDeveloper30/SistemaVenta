@@ -1,0 +1,12 @@
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\bin\Debug\net8.0\SVRepository.deps.json
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\bin\Debug\net8.0\SVRepository.dll
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\bin\Debug\net8.0\SVRepository.pdb
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.AssemblyInfo.cs
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.dll
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\refint\SVRepository.dll
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.pdb
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\ref\SVRepository.dll
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.csproj.AssemblyReference.cache
