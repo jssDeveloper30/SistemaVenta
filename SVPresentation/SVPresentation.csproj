@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Formularios\ViewModels\**" />
+    <EmbeddedResource Remove="Formularios\ViewModels\**" />
+    <None Remove="Formularios\ViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="appsettings.json" />
   </ItemGroup>
 
@@ -24,10 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SVServices\SVServices.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Formularios\ViewModels\" />
   </ItemGroup>
 
 </Project>

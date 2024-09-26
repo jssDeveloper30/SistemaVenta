@@ -10,3 +10,4 @@ C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\refint\SV
 C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.pdb
 C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\ref\SVRepository.dll
 C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.csproj.AssemblyReference.cache
+C:\Users\sebas\source\repos\SistemaVenta\SVRepository\obj\Debug\net8.0\SVRepository.sourcelink.json

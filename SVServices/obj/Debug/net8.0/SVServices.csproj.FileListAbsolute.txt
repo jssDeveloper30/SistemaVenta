@@ -13,3 +13,4 @@ C:\Users\sebas\source\repos\SistemaVenta\SVServices\obj\Debug\net8.0\SVServices.
 C:\Users\sebas\source\repos\SistemaVenta\SVServices\obj\Debug\net8.0\refint\SVServices.dll
 C:\Users\sebas\source\repos\SistemaVenta\SVServices\obj\Debug\net8.0\SVServices.pdb
 C:\Users\sebas\source\repos\SistemaVenta\SVServices\obj\Debug\net8.0\ref\SVServices.dll
+C:\Users\sebas\source\repos\SistemaVenta\SVServices\obj\Debug\net8.0\SVServices.sourcelink.json

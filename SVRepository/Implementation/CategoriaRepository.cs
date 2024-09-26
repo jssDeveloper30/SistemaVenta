@@ -13,15 +13,15 @@ namespace SVRepository.Implementation
         {
             _conexion = conexion;
         }
-        public async Task<List<Categoria>> GetCategory(string buscar = "")
+        public async Task<List<Categoria>> GetCategory(string search = "")
         {
-            List<Categoria> list = new List<Categoria>();
+            List<Categoria> list = [];
 
             using (var con = _conexion.GetConexion())
             {
                 con.Open();
                 var cmd = new SqlCommand("sp_listaCategoria", con);
-                cmd.Parameters.AddWithValue("@Buscar", buscar);
+                cmd.Parameters.AddWithValue("@Buscar", search);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (var dr = await cmd.ExecuteReaderAsync())
@@ -31,12 +31,12 @@ namespace SVRepository.Implementation
                         list.Add(new Categoria
                         {
                             IdCategoria = Convert.ToInt32(dr["IdCategoria"]),
-                            Nombre = dr["Nombre"].ToString()!,
+                            Nombre = dr["Nombre"].ToString(),
                             Activo = Convert.ToInt32(dr["Activo"]),
                             RefMedida = new Medida
                             {
                                 IdMedida = Convert.ToInt32(dr["IdMedida"]),
-                                Nombre = dr["NombreMedida"].ToString()!
+                                Nombre = dr["NombreMedida"].ToString()
                             }
                         });
                     }
@@ -79,11 +79,6 @@ namespace SVRepository.Implementation
             using (var con = _conexion.GetConexion())
             {
                 con.Open();
-                //                @IdCategoria int,
-                //@Nombre varchar(50),
-                //@IdMedida int,
-                //@Activo int,
-                //@MsjError varchar(100) output
                 var cmd = new SqlCommand("sp_editarCategoria", con);
                 cmd.Parameters.AddWithValue("@IdCategoria", objeto.IdCategoria);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
@@ -104,7 +99,5 @@ namespace SVRepository.Implementation
             }
             return response;
         }
-
-
     }
 }

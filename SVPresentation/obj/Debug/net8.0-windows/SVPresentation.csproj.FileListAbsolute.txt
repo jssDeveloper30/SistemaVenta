@@ -94,3 +94,4 @@ C:\Users\sebas\source\repos\SistemaVenta\SVPresentation\bin\Debug\net8.0-windows
 C:\Users\sebas\source\repos\SistemaVenta\SVPresentation\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\sebas\source\repos\SistemaVenta\SVPresentation\obj\Debug\net8.0-windows\SVPresentation.Formularios.frmCategoria.resources
 C:\Users\sebas\source\repos\SistemaVenta\SVPresentation\obj\Debug\net8.0-windows\SVPresentation.sourcelink.json
+C:\Users\sebas\source\repos\SistemaVenta\SVPresentation\obj\Debug\net8.0-windows\SVPresentation.Formularios.FrmProducto.resources

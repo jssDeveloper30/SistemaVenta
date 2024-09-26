@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SVServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc20c6903d662a1d4d057a40f7da635f6bfce221")]
 [assembly: System.Reflection.AssemblyProductAttribute("SVServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SVServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 ﻿namespace SVPresentation.Formularios
 {
-    partial class frmCategoria
+    partial class FrmCategoria
     {
         /// <summary>
         /// Required designer variable.
@@ -31,23 +31,23 @@
             tabControlMain = new TabControl();
             tabLista = new TabPage();
             dgvCategorias = new DataGridView();
-            txtBuscar = new TextBox();
-            btnBuscar = new Button();
-            btn = new Button();
+            txbBuscar = new TextBox();
+            BtnBuscar = new Button();
+            BtnNuevoLista = new Button();
             tabNuevo = new TabPage();
-            btnGuardarNuevo = new Button();
-            btnVolverNuevo = new Button();
+            BtnGuardarNuevo = new Button();
+            BtnVolverNuevo = new Button();
             cmbMedidaNuevo = new ComboBox();
-            cmbNombreNuevo = new ComboBox();
+            txbNombreNuevo = new ComboBox();
             label3 = new Label();
             lblName = new Label();
             tabEditar = new TabPage();
             cmbHabilitado = new ComboBox();
             label5 = new Label();
-            btnGuardarEditar = new Button();
-            btnVolverEditar = new Button();
+            BtnGuardarEditar = new Button();
+            BtnVolverEditar = new Button();
             cmbMedidaEditar = new ComboBox();
-            cmbNombreEditar = new ComboBox();
+            txbNombreEditar = new ComboBox();
             label2 = new Label();
             label4 = new Label();
             label1 = new Label();
@@ -74,9 +74,9 @@
             // tabLista
             // 
             tabLista.Controls.Add(dgvCategorias);
-            tabLista.Controls.Add(txtBuscar);
-            tabLista.Controls.Add(btnBuscar);
-            tabLista.Controls.Add(btn);
+            tabLista.Controls.Add(txbBuscar);
+            tabLista.Controls.Add(BtnBuscar);
+            tabLista.Controls.Add(BtnNuevoLista);
             tabLista.Location = new Point(4, 24);
             tabLista.Name = "tabLista";
             tabLista.Padding = new Padding(3);
@@ -93,41 +93,43 @@
             dgvCategorias.RowHeadersWidth = 51;
             dgvCategorias.Size = new Size(699, 235);
             dgvCategorias.TabIndex = 3;
+            dgvCategorias.CellContentClick += dgvCategorias_CellContentClick;
             // 
-            // txtBuscar
+            // txbBuscar
             // 
-            txtBuscar.Location = new Point(424, 19);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(183, 27);
-            txtBuscar.TabIndex = 2;
+            txbBuscar.Location = new Point(424, 19);
+            txbBuscar.Name = "txbBuscar";
+            txbBuscar.Size = new Size(183, 27);
+            txbBuscar.TabIndex = 2;
             // 
-            // btnBuscar
+            // BtnBuscar
             // 
-            btnBuscar.Cursor = Cursors.Hand;
-            btnBuscar.Location = new Point(623, 17);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 29);
-            btnBuscar.TabIndex = 1;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
-            btnBuscar.Click += btnBuscar_Click;
+            BtnBuscar.Cursor = Cursors.Hand;
+            BtnBuscar.Location = new Point(623, 17);
+            BtnBuscar.Name = "BtnBuscar";
+            BtnBuscar.Size = new Size(94, 29);
+            BtnBuscar.TabIndex = 1;
+            BtnBuscar.Text = "Buscar";
+            BtnBuscar.UseVisualStyleBackColor = true;
+            BtnBuscar.Click += BtnBuscar_Click;
             // 
-            // btn
+            // BtnNuevoLista
             // 
-            btn.Cursor = Cursors.Hand;
-            btn.Location = new Point(18, 17);
-            btn.Name = "btn";
-            btn.Size = new Size(94, 29);
-            btn.TabIndex = 0;
-            btn.Text = "Nuevo";
-            btn.UseVisualStyleBackColor = true;
+            BtnNuevoLista.Cursor = Cursors.Hand;
+            BtnNuevoLista.Location = new Point(18, 17);
+            BtnNuevoLista.Name = "BtnNuevoLista";
+            BtnNuevoLista.Size = new Size(94, 29);
+            BtnNuevoLista.TabIndex = 0;
+            BtnNuevoLista.Text = "Nuevo";
+            BtnNuevoLista.UseVisualStyleBackColor = true;
+            BtnNuevoLista.Click += BtnNuevoLista_Click;
             // 
             // tabNuevo
             // 
-            tabNuevo.Controls.Add(btnGuardarNuevo);
-            tabNuevo.Controls.Add(btnVolverNuevo);
+            tabNuevo.Controls.Add(BtnGuardarNuevo);
+            tabNuevo.Controls.Add(BtnVolverNuevo);
             tabNuevo.Controls.Add(cmbMedidaNuevo);
-            tabNuevo.Controls.Add(cmbNombreNuevo);
+            tabNuevo.Controls.Add(txbNombreNuevo);
             tabNuevo.Controls.Add(label3);
             tabNuevo.Controls.Add(lblName);
             tabNuevo.Location = new Point(4, 24);
@@ -138,26 +140,28 @@
             tabNuevo.Text = "Nuevo";
             tabNuevo.UseVisualStyleBackColor = true;
             // 
-            // btnGuardarNuevo
+            // BtnGuardarNuevo
             // 
-            btnGuardarNuevo.Cursor = Cursors.Hand;
-            btnGuardarNuevo.ForeColor = Color.FromArgb(30, 90, 195);
-            btnGuardarNuevo.Location = new Point(612, 267);
-            btnGuardarNuevo.Name = "btnGuardarNuevo";
-            btnGuardarNuevo.Size = new Size(94, 29);
-            btnGuardarNuevo.TabIndex = 7;
-            btnGuardarNuevo.Text = "Guardar";
-            btnGuardarNuevo.UseVisualStyleBackColor = true;
+            BtnGuardarNuevo.Cursor = Cursors.Hand;
+            BtnGuardarNuevo.ForeColor = Color.FromArgb(30, 90, 195);
+            BtnGuardarNuevo.Location = new Point(612, 267);
+            BtnGuardarNuevo.Name = "BtnGuardarNuevo";
+            BtnGuardarNuevo.Size = new Size(94, 29);
+            BtnGuardarNuevo.TabIndex = 7;
+            BtnGuardarNuevo.Text = "Guardar";
+            BtnGuardarNuevo.UseVisualStyleBackColor = true;
+            BtnGuardarNuevo.Click += BtnGuardarNuevo_Click;
             // 
-            // btnVolverNuevo
+            // BtnVolverNuevo
             // 
-            btnVolverNuevo.Cursor = Cursors.Hand;
-            btnVolverNuevo.Location = new Point(18, 267);
-            btnVolverNuevo.Name = "btnVolverNuevo";
-            btnVolverNuevo.Size = new Size(94, 29);
-            btnVolverNuevo.TabIndex = 6;
-            btnVolverNuevo.Text = "Volver";
-            btnVolverNuevo.UseVisualStyleBackColor = true;
+            BtnVolverNuevo.Cursor = Cursors.Hand;
+            BtnVolverNuevo.Location = new Point(18, 267);
+            BtnVolverNuevo.Name = "BtnVolverNuevo";
+            BtnVolverNuevo.Size = new Size(94, 29);
+            BtnVolverNuevo.TabIndex = 6;
+            BtnVolverNuevo.Text = "Volver";
+            BtnVolverNuevo.UseVisualStyleBackColor = true;
+            BtnVolverNuevo.Click += BtnVolverNuevo_Click;
             // 
             // cmbMedidaNuevo
             // 
@@ -169,13 +173,13 @@
             cmbMedidaNuevo.Size = new Size(687, 28);
             cmbMedidaNuevo.TabIndex = 5;
             // 
-            // cmbNombreNuevo
+            // txbNombreNuevo
             // 
-            cmbNombreNuevo.FormattingEnabled = true;
-            cmbNombreNuevo.Location = new Point(19, 50);
-            cmbNombreNuevo.Name = "cmbNombreNuevo";
-            cmbNombreNuevo.Size = new Size(687, 28);
-            cmbNombreNuevo.TabIndex = 4;
+            txbNombreNuevo.FormattingEnabled = true;
+            txbNombreNuevo.Location = new Point(19, 50);
+            txbNombreNuevo.Name = "txbNombreNuevo";
+            txbNombreNuevo.Size = new Size(687, 28);
+            txbNombreNuevo.TabIndex = 4;
             // 
             // label3
             // 
@@ -199,10 +203,10 @@
             // 
             tabEditar.Controls.Add(cmbHabilitado);
             tabEditar.Controls.Add(label5);
-            tabEditar.Controls.Add(btnGuardarEditar);
-            tabEditar.Controls.Add(btnVolverEditar);
+            tabEditar.Controls.Add(BtnGuardarEditar);
+            tabEditar.Controls.Add(BtnVolverEditar);
             tabEditar.Controls.Add(cmbMedidaEditar);
-            tabEditar.Controls.Add(cmbNombreEditar);
+            tabEditar.Controls.Add(txbNombreEditar);
             tabEditar.Controls.Add(label2);
             tabEditar.Controls.Add(label4);
             tabEditar.Location = new Point(4, 24);
@@ -232,26 +236,28 @@
             label5.TabIndex = 14;
             label5.Text = "Habilitado:";
             // 
-            // btnGuardarEditar
+            // BtnGuardarEditar
             // 
-            btnGuardarEditar.Cursor = Cursors.Hand;
-            btnGuardarEditar.ForeColor = Color.FromArgb(30, 90, 195);
-            btnGuardarEditar.Location = new Point(613, 268);
-            btnGuardarEditar.Name = "btnGuardarEditar";
-            btnGuardarEditar.Size = new Size(94, 29);
-            btnGuardarEditar.TabIndex = 13;
-            btnGuardarEditar.Text = "Guardar";
-            btnGuardarEditar.UseVisualStyleBackColor = true;
+            BtnGuardarEditar.Cursor = Cursors.Hand;
+            BtnGuardarEditar.ForeColor = Color.FromArgb(30, 90, 195);
+            BtnGuardarEditar.Location = new Point(613, 268);
+            BtnGuardarEditar.Name = "BtnGuardarEditar";
+            BtnGuardarEditar.Size = new Size(94, 29);
+            BtnGuardarEditar.TabIndex = 13;
+            BtnGuardarEditar.Text = "Guardar";
+            BtnGuardarEditar.UseVisualStyleBackColor = true;
+            BtnGuardarEditar.Click += BtnGuardarEditar_Click;
             // 
-            // btnVolverEditar
+            // BtnVolverEditar
             // 
-            btnVolverEditar.Cursor = Cursors.Hand;
-            btnVolverEditar.Location = new Point(19, 268);
-            btnVolverEditar.Name = "btnVolverEditar";
-            btnVolverEditar.Size = new Size(94, 29);
-            btnVolverEditar.TabIndex = 12;
-            btnVolverEditar.Text = "Volver";
-            btnVolverEditar.UseVisualStyleBackColor = true;
+            BtnVolverEditar.Cursor = Cursors.Hand;
+            BtnVolverEditar.Location = new Point(19, 268);
+            BtnVolverEditar.Name = "BtnVolverEditar";
+            BtnVolverEditar.Size = new Size(94, 29);
+            BtnVolverEditar.TabIndex = 12;
+            BtnVolverEditar.Text = "Volver";
+            BtnVolverEditar.UseVisualStyleBackColor = true;
+            BtnVolverEditar.Click += BtnVolverEditar_Click;
             // 
             // cmbMedidaEditar
             // 
@@ -263,13 +269,13 @@
             cmbMedidaEditar.Size = new Size(687, 28);
             cmbMedidaEditar.TabIndex = 11;
             // 
-            // cmbNombreEditar
+            // txbNombreEditar
             // 
-            cmbNombreEditar.FormattingEnabled = true;
-            cmbNombreEditar.Location = new Point(20, 51);
-            cmbNombreEditar.Name = "cmbNombreEditar";
-            cmbNombreEditar.Size = new Size(687, 28);
-            cmbNombreEditar.TabIndex = 10;
+            txbNombreEditar.FormattingEnabled = true;
+            txbNombreEditar.Location = new Point(20, 51);
+            txbNombreEditar.Name = "txbNombreEditar";
+            txbNombreEditar.Size = new Size(687, 28);
+            txbNombreEditar.TabIndex = 10;
             // 
             // label2
             // 
@@ -298,7 +304,7 @@
             label1.TabIndex = 1;
             label1.Text = "Inventario/categoria";
             // 
-            // frmCategoria
+            // FrmCategoria
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -306,10 +312,10 @@
             Controls.Add(label1);
             Controls.Add(tabControlMain);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmCategoria";
+            Name = "FrmCategoria";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmCategoria";
-            Load += frmCategoria_Load;
+            Load += FrmCategoria_Load;
             tabControlMain.ResumeLayout(false);
             tabLista.ResumeLayout(false);
             tabLista.PerformLayout();
@@ -329,23 +335,24 @@
         private TabPage tabNuevo;
         private Label label1;
         private TabPage tabEditar;
-        private Button btn;
-        private Button btnBuscar;
+        private Button BtnNuevoLista;
+        private Button BtnBuscar;
         private DataGridView dgvCategorias;
-        private TextBox txtBuscar;
-        private ComboBox cmbNombreNuevo;
+        private TextBox txbBuscar;
+        private ComboBox txbNombreNuevo;
         private Label label3;
         private Label lblName;
-        private Button btnGuardarNuevo;
-        private Button btnVolverNuevo;
+        private Button BtnGuardarNuevo;
+        private Button BtnVolverNuevo;
         private ComboBox cmbMedidaNuevo;
-        private Button btnGuardarEditar;
-        private Button btnVolverEditar;
+        private Button BtnGuardarEditar;
+        private Button BtnVolverEditar;
         private ComboBox cmbMedidaEditar;
         private ComboBox cmbNombreEditar;
         private Label label2;
         private Label label4;
         private ComboBox cmbHabilitado;
         private Label label5;
+        private ComboBox txbNombreEditar;
     }
 }
